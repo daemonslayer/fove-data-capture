@@ -55,15 +55,21 @@ else()
 	set(NativeUtilFiles NativeUtil.h)
 endif()
 
-# Create the data example, and the option to enable/disable it
-option(FOVE_BUILD_DATA_EXAMPLE "Enable building of the Data Example" ON)
-if(FOVE_BUILD_DATA_EXAMPLE)
-	# Declare the Data example target to cmake
-	add_executable(FoveDataExample DataExample.cpp Util.h Util.cpp)
+add_library(DataCapture STATIC
+	DataCapture.cpp
+	DataCapture.h
+	Util.cpp
+	Util.h
+)
 
-	# Add the Data example to our list of targets which is used below
-	list(APPEND alltargets FoveDataExample)
-endif()
+add_executable(FOVE_BUILD_DATA_EXAMPLE
+	Main.cpp
+)
+
+target_link_libraries(FOVE_BUILD_DATA_EXAMPLE
+	DataCapture)
+
+list(APPEND alltargets DataCapture)
 
 # Add a post-build command to each target to copy the FoveClient dynamic library to the executable location
 # Otherwise the executable will not be able to find the dll, and will fail to launch
@@ -73,8 +79,8 @@ if(FoveClient)
 	endforeach()
 endif()
 
-# Set default startup project to something other than cmake's ALL_BUILD target
-# This way anyone hitting build-and-run will run one of the targets instead of ALL_BUILD which isn't runable
+# # Set default startup project to something other than cmake's ALL_BUILD target
+# # This way anyone hitting build-and-run will run one of the targets instead of ALL_BUILD which isn't runable
 if(MSVC AND NOT "${CppExampleBuildInTree}" AND alltargets)
 	list(GET alltargets 0 FirstTarget)
 	set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${FirstTarget})

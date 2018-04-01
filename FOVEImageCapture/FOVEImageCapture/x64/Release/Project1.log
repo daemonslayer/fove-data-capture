@@ -1,0 +1,22 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (FOVEImageCapture.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MyForm.cpp
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(84): warning C4538: 'cli::array<System::String ^,1>': const/volatile qualifiers on this type are not supported
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(87): warning C4538: 'cli::array<System::String ^,1>': const/volatile qualifiers on this type are not supported
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1026): warning C4947: 'System::Threading::Thread::Resume': marked as obsolete
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1026): note: Message: 'Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1031): warning C4947: 'System::Threading::Thread::Suspend': marked as obsolete
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1031): note: Message: 'Thread.Suspend has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1059): warning C4947: 'System::Threading::Thread::Suspend': marked as obsolete
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1059): note: Message: 'Thread.Suspend has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1090): warning C4947: 'System::Threading::Thread::Resume': marked as obsolete
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1090): note: Message: 'Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1134): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1150): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1162): warning C4947: 'System::Threading::Thread::Resume': marked as obsolete
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(1162): note: Message: 'Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(83): warning C4538: 'cli::array<System::String ^,1> ^': const/volatile qualifiers on this type are not supported
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(83): note: This diagnostic occurred in the compiler generated function 'void FOVEImageCapture::LandingPage::LandingPage(void)'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(86): warning C4538: 'cli::array<System::String ^,1> ^': const/volatile qualifiers on this type are not supported
+  c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.h(86): note: This diagnostic occurred in the compiler generated function 'void FOVEImageCapture::LandingPage::LandingPage(void)'
+c:\users\kapil\desktop\FOVEImageCapture\FOVEImageCapture\myform.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  FOVEImageCapture.vcxproj -> C:\Users\kapil\Desktop\FOVEImageCapture\x64\Release\FOVEImageCapture.exe
